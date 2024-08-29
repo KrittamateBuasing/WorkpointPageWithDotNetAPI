@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\workpoint\\workpoint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\models\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|d:\\workpoint\\workpoint\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F7D832-039D-42FA-A73A-3752805C421D}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Detail.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Detail.cshtml",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Detail.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Detail.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAFAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T09:50:50.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T09:19:25.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T09:19:11.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T07:28:17.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T09:48:27.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T06:41:07.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Create.cshtml",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T06:50:34.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InfoController.cs",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Controllers\\InfoController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\InfoController.cs",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Controllers\\InfoController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\InfoController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwGUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T07:20:20.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Info.cs",
+              "DocumentMoniker": "D:\\workpoint\\workpoint\\WebApplication1\\Models\\Info.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Info.cs",
+              "ToolTip": "D:\\workpoint\\workpoint\\WebApplication1\\Models\\Info.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Info.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T07:17:54.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

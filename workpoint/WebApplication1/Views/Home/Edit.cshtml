@@ -1,0 +1,141 @@
+﻿@model WebApplication1.Models.Info
+
+@{
+    ViewData["Title"] = "แก้ไขข้อมูล";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="container">
+    <form id="api-form" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" name="title">
+        </div>
+        <div class="form-group">
+            <label for="image">Image</label>
+           
+            <!-- แสดงตัวอย่างรูปภาพ -->
+            <img id="image-preview" src="" alt="Image preview" style="display: none; max-width: 200px; margin-top: 10px;">
+            <input type="file" class="form-control" id="image" name="image">
+        </div>
+        <div class="form-group">
+            <label for="detail">Detail</label>
+            <textarea class="form-control" id="detail" name="detail" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Save</button>
+    </form>
+
+</div>
+
+<script>
+
+    // ฟังก์ชันเพื่อดึงข้อมูลจาก API
+    async function fetchApiData(id) {
+        const apiUrl = `https://localhost:7116/api/InfoApi/${id}`;
+
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            const data = await response.json();
+
+            // แสดงข้อมูลในฟอร์ม
+            document.getElementById('title').value = data.title;
+            document.getElementById('detail').value = data.detail;
+
+            // ตั้งค่ารูปภาพที่อัปโหลดไว้
+            const imagePreview = document.getElementById('image-preview');
+            if (data.image) {
+                imagePreview.src = data.image;
+                imagePreview.style.display = 'block'; // แสดงรูปภาพ
+            }
+
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+            document.getElementById('api-form').innerHTML = '<p>Error loading data: ' + error.message + '</p>';
+        }
+    }
+
+   
+
+    // ฟังก์ชันเพื่อแสดงตัวอย่างรูปภาพ
+    function previewImage() {
+        const file = document.getElementById('image').files[0];
+        const imagePreview = document.getElementById('image-preview');
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block'; // แสดงตัวอย่างรูปภาพ
+            };
+            reader.readAsDataURL(file);
+        } else {
+            imagePreview.style.display = 'none'; // ซ่อนตัวอย่างรูปภาพหากไม่มีไฟล์
+        }
+    }
+
+    // ฟังก์ชันเพื่ออัปเดตข้อมูลผ่าน API
+    async function updateApiData(id, formData) {
+        const apiUrl = `https://localhost:7116/api/InfoApi/update`; // หรือใช้ endpoint ที่เหมาะสม
+
+        try {
+            const response = await fetch(apiUrl, {
+                method: 'PUT', // หรือ 'PATCH' ขึ้นอยู่กับวิธีที่ API ของคุณรองรับการอัปเดต
+                body: formData // ส่งข้อมูลฟอร์มทั้งหมดรวมถึงไฟล์
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            alert('Data updated successfully');
+
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+            alert('Error updating data: ' + error.message);
+        }
+    }
+
+    // ฟังก์ชันเพื่อแสดงตัวอย่างรูปภาพ
+    function previewImage() {
+        const file = document.getElementById('image').files[0];
+        const imagePreview = document.getElementById('image-preview');
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block'; // แสดงตัวอย่างรูปภาพ
+            };
+            reader.readAsDataURL(file);
+        } else {
+            imagePreview.style.display = 'none'; // ซ่อนตัวอย่างรูปภาพหากไม่มีไฟล์
+        }
+    }
+
+    // รับ ID จาก URL และเรียกใช้ฟังก์ชัน
+    window.onload = function () {
+        const id = window.location.pathname.split('/').pop(); // ดึง id จาก URL
+        if (id) {
+            fetchApiData(id);
+
+            // จัดการการส่งข้อมูลของฟอร์ม
+            document.getElementById('api-form').addEventListener('submit', function (event) {
+                event.preventDefault(); // หยุดการส่งข้อมูลฟอร์มแบบปกติ
+
+                const formData = new FormData(document.getElementById('api-form')); // ใช้ FormData เพื่อจัดการกับไฟล์
+                formData.append('id', id); // เพิ่ม id ลงใน FormData
+
+                updateApiData(id, formData); // ส่งข้อมูลที่แก้ไขไปยัง API
+            });
+
+            // ฟังการเปลี่ยนแปลงของไฟล์รูปภาพ
+            document.getElementById('image').addEventListener('change', previewImage);
+        } else {
+            document.getElementById('api-form').innerHTML = '<p>ID not provided in URL</p>';
+        }
+    };
+
+
+
+
+</script>

@@ -1,0 +1,84 @@
+﻿@model WebApplication1.Models.Info
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+<div class="container">
+    <!-- Placeholder for API data -->
+    <div id="api-data">
+        <div id="api-details" class="card-container">
+            <!-- Data will be inserted here -->
+        </div>
+    </div>
+</div>
+<style>
+    .card {
+        margin-bottom: 20px;
+        cursor: pointer;
+     
+        max-width: 100%; /* ปรับให้เต็มพื้นที่ที่มี */
+        border: 1px solid #ddd; /* เพิ่มกรอบรอบการ์ด */
+        border-radius: 8px; /* มุมโค้งของการ์ด */
+        overflow: hidden; /* ซ่อนส่วนที่ล้นออกจากขอบการ์ด */
+    }
+
+    .card-img-top {
+        max-width: 100%; /* ปรับให้เต็มพื้นที่ที่มี */
+        height: 700px; /* กำหนดความสูงของรูปภาพ */
+        object-fit: cover; /* ให้รูปภาพเติมเต็มพื้นที่ที่กำหนด */
+    }
+
+    .card-title {
+        max-width: 100%; /* ปรับให้เต็มพื้นที่ที่มี */
+        
+
+    }
+
+    .card-text {
+       
+        text-overflow: ellipsis;
+        text-align: left; /* ชิดซ้าย */
+        margin: 0; /* แก้ไขระยะห่างภายในถ้าจำเป็น */
+    }
+
+</style>
+<script>
+  
+    // ฟังก์ชันเพื่อดึงข้อมูลจาก API
+    async function fetchApiData(id) {
+        const apiUrl = `https://localhost:7116/api/InfoApi/${id}`;
+
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            const data = await response.json();
+
+            // แสดงข้อมูลในหน้า
+            const detailsContainer = document.getElementById('api-details');
+            detailsContainer.innerHTML = `
+                <div class="card" ">
+                    <h1 class="card-title">${data.title}</h1>
+                    <img src="${data.image}" class="card-img-top" alt="${data.title}">
+                    <div class="card-body">
+                        
+                        <p class="card-text">${data.detail}</p>
+                    </div>
+                </div>
+            `;
+
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+            document.getElementById('api-details').innerHTML = '<p>Error loading data</p>';
+        }
+    }
+
+    // รับ ID จาก URL และเรียกใช้ฟังก์ชัน
+    window.onload = function () {
+        const id = window.location.pathname.split('/').pop(); // ดึง id จาก URL
+        fetchApiData(id);
+    };
+</script>
